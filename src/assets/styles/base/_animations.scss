@@ -1,0 +1,51 @@
+@keyframes questionButtonOpen {
+  from {
+    opacity: 0;
+    top: -30%;
+  }
+  to {
+    opacity: 1;
+    top: 50%;
+  }
+}
+
+@keyframes questionButtonClose {
+  from {
+    opacity: 1;
+    top: 50%;
+  }
+  to {
+    opacity: 0;
+    top: -30%;
+  }
+}
+
+@keyframes questionAnswerOpen {
+  from {
+    opacity: 0;
+    height: 30px;
+    margin-top: -30px;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    height: auto;
+    margin-top: 0;
+    visibility: visible;
+  }
+}
+
+@keyframes questionAnswerClose {
+  from {
+    opacity: 1;
+    height: auto;
+    margin-top: 0;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    height: 30px;
+    margin-top: -30px;
+    visibility: hidden;
+  }
+}

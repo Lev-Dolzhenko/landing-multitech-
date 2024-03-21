@@ -1,0 +1,53 @@
+.header {
+}
+
+.container_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.header__wrapper {
+  position: relative;
+
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 30px;
+  height: 85vh;
+  width: 100%;
+}
+
+.header__cell,
+.header__person {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header__multi {
+  position: absolute;
+  left: 35%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+
+  color: rgb(0, 0, 0);
+  font-size: 128px;
+  font-weight: 500;
+  line-height: 155px;
+}
+
+.header__tech {
+  position: absolute;
+  left: 65%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+
+  color: rgb(0, 0, 0);
+  font-size: 128px;
+  font-weight: 500;
+  line-height: 155px;
+}

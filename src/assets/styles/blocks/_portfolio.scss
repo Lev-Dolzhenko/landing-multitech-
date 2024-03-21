@@ -1,0 +1,42 @@
+.portfolio {
+  height: 100vh;
+  position: relative;
+
+  background-image: url(/src/assets/images/main/marketing/elipse.png);
+  transform: translateY(-10%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container_portfolio {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio__title {
+  margin-left: 100px;
+}
+
+.title1_portfolio {
+  background: linear-gradient(
+    126.38deg,
+    rgb(33, 94, 230),
+    rgb(143, 33, 230),
+    rgb(245, 5, 14)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 128px;
+  font-weight: 500;
+  line-height: 155px;
+}
+
+.circle_portfolio {
+  bottom: -35px;
+  left: 50px;
+}
