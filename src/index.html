@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <header class="header 1none">
+    <header class="header n1ne">
       <div class="container container_header">
         <div class="header__wrapper">
           <nav class="header__nav">
@@ -81,7 +81,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="about none">
+      <section class="about no1ne">
         <div class="container container_about">
           <div class="about__row">
             <div class="about__text">
@@ -99,7 +99,12 @@
                 </p>
               </div>
             </div>
-            <div class="about__graph"></div>
+            <div class="about__graph">
+              <img
+                src="/assets/images/main/about/graphOne.svg"
+                alt="graphOne"
+              />
+            </div>
           </div>
         </div>
         <img
@@ -108,7 +113,7 @@
           alt="circle"
         />
       </section>
-      <section class="development 1none">
+      <section class="development no1ne">
         <div class="container container_development">
           <div class="development__row">
             <div class="development__person">
@@ -154,7 +159,7 @@
         />
         <div class="development__particles"></div>
       </section>
-      <section class="marketing 1none">
+      <section class="marketing no1ne">
         <div class="container container_marketing">
           <div class="marketing__title">
             <h2 class="title2 title2_marketing">МАРКЕТИНГ</h2>
@@ -260,10 +265,15 @@
           </div>
         </div>
       </section>
-      <section class="portfolio none">
+      <section class="portfolio non1e">
         <div class="container container_portfolio">
           <div class="portfolio__title">
-            <h1 class="title1 title1_portfolio">PORTFOLIO</h1>
+            <h1 class="title1 title1_portfolio title1_portfolio_large">
+              PORTFOLIO
+            </h1>
+            <h1 class="title1 title1_portfolio title1_portfolio_small">
+              PORT<br />FOLIO
+            </h1>
           </div>
         </div>
         <img
@@ -272,7 +282,7 @@
           alt="circle"
         />
       </section>
-      <section class="cards 1none">
+      <section class="cards no1ne">
         <div class="container">
           <div class="cards__list">
             <div class="card__item">
@@ -323,7 +333,7 @@
           </div>
         </div>
       </section>
-      <section class="form none">
+      <section class="form 1none">
         <div class="container">
           <div class="form__row">
             <form class="form_form">
@@ -357,24 +367,39 @@
         </div>
       </section>
     </main>
-    <footer class="footer none">
+    <footer class="footer n1one">
       <div class="container container_footer">
         <div class="footer__row">
-          <div class="footer__row_one footer__row_item">
-            <h5 class="title5 title5_footer">АГЕНТСТВО</h5>
+          <div data-name="agency" class="footer__row_one footer__row_item">
+            <div class="footer__row_wrapper">
+              <h5 class="title5 title5_footer">АГЕНТСТВО</h5>
+              <button data-button="agency" class="footer__button">
+                <img src="/assets/images/footer/plusIcon.svg" alt="plusIcon" />
+              </button>
+            </div>
             <a class="footer__row_link" href="#!">Награды</a>
             <a class="footer__row_link" href="#!">Клиенты и отзывы</a>
             <a class="footer__row_link" href="#!">Работа в MultiTech</a>
           </div>
-          <div class="footer__row_two footer__row_item">
-            <h5 class="title5 title5_footer">УСЛУГИ</h5>
+          <div data-name="services" class="footer__row_two footer__row_item">
+            <div class="footer__row_wrapper">
+              <h5 class="title5 title5_footer">УСЛУГИ</h5>
+              <button data-button="services" class="footer__button">
+                <img src="/assets/images/footer/plusIcon.svg" alt="plusIcon" />
+              </button>
+            </div>
             <a class="footer__row_link" href="#!">Веб-сервисы</a>
             <a class="footer__row_link" href="#!">Мобильные приложения</a>
             <a class="footer__row_link" href="#!">Контекстная реклама</a>
             <a class="footer__row_link" href="#!">SEO</a>
           </div>
-          <div class="footer__row_three footer__row_item">
-            <h5 class="title5 title5_footer">ИНТЕРЕСНОЕ</h5>
+          <div data-name="interesting" class="footer__row_three footer__row_item">
+            <div class="footer__row_wrapper">
+              <h5 class="title5 title5_footer">ИНТЕРЕСНОЕ</h5>
+              <button data-button="interesting" class="footer__button">
+                <img src="/assets/images/footer/plusIcon.svg" alt="plusIcon" />
+              </button>
+            </div>
             <a class="footer__row_link" href="#!">Жизнь Мультитех</a>
             <a class="footer__row_link" href="#!"
               >Взяли 50 наград по design awwards</a

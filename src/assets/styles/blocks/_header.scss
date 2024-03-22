@@ -63,6 +63,8 @@
   font-size: clamp(48px, 1.095rem + 9.52vw, 128px);
   font-weight: 500;
   line-height: 155px;
+
+  display: none;
 }
 
 @media screen and (max-width: 1160px) {
@@ -77,5 +79,6 @@
 @media screen and (max-width: 480px) {
   .header__multitech {
     top: 85%;
+    display: block;
   }
 }

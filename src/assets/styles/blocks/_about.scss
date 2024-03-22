@@ -23,6 +23,8 @@
   justify-content: space-between;
 }
 .about__text {
+  max-width: 440px;
+  width: 100%;
 }
 .about__title {
   position: relative;
@@ -43,9 +45,30 @@
   max-width: 380px;
 }
 .about__graph {
+  position: relative;
+
+  &::after {
+    content: "f(x)=ax2+bx";
+    color: rgb(255, 255, 255);
+    font-size: clamp(20px, 0.714rem + 2.38vw, 40px);
+    font-weight: 500;
+    line-height: 130%;
+
+    position: absolute;
+    left: 50%;
+    bottom: -15%;
+    transform: translateX(-50%);
+  }
 }
 
 .circle_about {
   bottom: clamp(35px, 1.384rem + 3.57vw, 65px);
   left: clamp(10px, -0.446rem + 4.76vw, 50px);
+}
+
+@media screen and (max-width: 870px) {
+  .about__row {
+    flex-direction: column;
+    row-gap: 100px;
+  }
 }

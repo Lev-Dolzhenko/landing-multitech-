@@ -38,5 +38,30 @@
 
 .circle_portfolio {
   bottom: -35px;
-  left: 50px;
+  left: clamp(10px, -0.446rem + 4.76vw, 50px);
+}
+
+.title1_portfolio_small {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .title1_portfolio_small {
+    display: block;
+    margin-left: clamp(0px, -4.167rem + 18.52vw, 100px);
+    font-size: clamp(64px, 1.333rem + 11.85vw, 128px);
+    line-height: clamp(55px, 1.146rem + 10.19vw, 110px);
+  }
+
+  .title1_portfolio_large {
+    display: none;
+  }
+
+  .portfolio__title {
+    margin-left: unset;
+  }
+
+  .portfolio {
+    background: unset;
+  }
 }

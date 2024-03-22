@@ -27,3 +27,12 @@
     padding-top: 0;
   }
 }
+
+@keyframes showFooterLinks {
+  from {
+    height: 30px;
+  }
+  to {
+    height: fit-content;
+  }
+}

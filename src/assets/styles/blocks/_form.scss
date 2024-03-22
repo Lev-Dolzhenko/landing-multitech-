@@ -35,7 +35,7 @@
   font-weight: 500;
   line-height: 130%;
 
-  margin-bottom: 16px;
+  margin-bottom: clamp(0px, -0.667rem + 2.96vw, 16px);
 }
 .form__label_small {
   color: rgb(92, 92, 92);
@@ -43,7 +43,7 @@
   font-weight: 500;
   line-height: 130%;
 
-  margin-bottom: 55px;
+  margin-bottom: clamp(0px, -2.292rem + 10.19vw, 55px);
 }
 .form__particles {
   width: 100%;
@@ -91,4 +91,41 @@
 
 .button_form {
   padding: 19px 50px;
+}
+
+@media screen and (max-width: 1160px) {
+  .form {
+    position: relative;
+  }
+  .form__particles {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .form__row {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .input__wrapper {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .button__wrapper {
+    flex-direction: column;
+    align-items: start;
+    row-gap: 20px;
+  }
+  .button_form {
+    margin-left: unset;
+    width: 100%;
+    max-width: unset;
+  }
 }
