@@ -46,6 +46,6 @@
 }
 
 .circle_about {
-  bottom: 65px;
-  left: 50px;
+  bottom: clamp(35px, 1.384rem + 3.57vw, 65px);
+  left: clamp(10px, -0.446rem + 4.76vw, 50px);
 }

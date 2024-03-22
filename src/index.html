@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <header class="header no1ne">
+    <header class="header 1none">
       <div class="container container_header">
         <div class="header__wrapper">
           <nav class="header__nav">
@@ -30,6 +30,38 @@
               </li>
             </ul>
             <button class="header__nav_button button">ОБСУДИТЬ ПРОЕКТ</button>
+            <div id="burgerIcon">
+              <input
+                type="checkbox"
+                id="burger-checkbox"
+                class="burger-checkbox"
+              />
+              <label
+                id="burgerButton"
+                class="burger"
+                for="burger-checkbox"
+              ></label>
+            </div>
+            <ul class="header__nav_list-mobile">
+              <li class="header__nav_item-mobile">
+                <a href="#!" class="header__nav_link-mobile">О НАС</a>
+              </li>
+              <li class="header__nav_item-mobile">
+                <a href="#!" class="header__nav_link-mobile">РАЗРАБОТКА</a>
+              </li>
+              <li class="header__nav_item-mobile">
+                <a href="#!" class="header__nav_link-mobile">МАРКЕТИНГ</a>
+              </li>
+              <li class="header__nav_item-mobile">
+                <a href="#!" class="header__nav_link-mobile">ПОРТФОЛИО</a>
+              </li>
+              <li class="header__nav_item-mobile">
+                <a href="#!" class="header__nav_link-mobile">СТОИМОСТЬ</a>
+              </li>
+              <li class="header__nav_item-mobile">
+                <a href="#!" class="header__nav_link-mobile">ОБСУДИТЬ ПРОЕКТ</a>
+              </li>
+            </ul>
           </nav>
           <div class="header__particles"></div>
           <img
@@ -44,11 +76,12 @@
           />
           <span class="header__multi">MULTI</span>
           <span class="header__tech">TECH</span>
+          <span class="header__multitech">MULTITECH</span>
         </div>
       </div>
     </header>
     <main class="main">
-      <section class="about non1e">
+      <section class="about none">
         <div class="container container_about">
           <div class="about__row">
             <div class="about__text">
@@ -75,7 +108,7 @@
           alt="circle"
         />
       </section>
-      <section class="development non1e">
+      <section class="development 1none">
         <div class="container container_development">
           <div class="development__row">
             <div class="development__person">
@@ -98,6 +131,7 @@
               </div>
               <div class="developmet__images">
                 <img
+                  class="grapthOne"
                   src="/assets/images/main/development/grapthOne.png"
                   alt="grapthOne"
                 />
@@ -120,7 +154,7 @@
         />
         <div class="development__particles"></div>
       </section>
-      <section class="marketing n1one">
+      <section class="marketing 1none">
         <div class="container container_marketing">
           <div class="marketing__title">
             <h2 class="title2 title2_marketing">МАРКЕТИНГ</h2>
@@ -226,7 +260,7 @@
           </div>
         </div>
       </section>
-      <section class="portfolio no1ne">
+      <section class="portfolio none">
         <div class="container container_portfolio">
           <div class="portfolio__title">
             <h1 class="title1 title1_portfolio">PORTFOLIO</h1>
@@ -238,7 +272,7 @@
           alt="circle"
         />
       </section>
-      <section class="cards n1one">
+      <section class="cards 1none">
         <div class="container">
           <div class="cards__list">
             <div class="card__item">
@@ -289,7 +323,7 @@
           </div>
         </div>
       </section>
-      <section class="form 1none">
+      <section class="form none">
         <div class="container">
           <div class="form__row">
             <form class="form_form">
@@ -323,7 +357,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer none">
       <div class="container container_footer">
         <div class="footer__row">
           <div class="footer__row_one footer__row_item">
@@ -343,7 +377,7 @@
             <h5 class="title5 title5_footer">ИНТЕРЕСНОЕ</h5>
             <a class="footer__row_link" href="#!">Жизнь Мультитех</a>
             <a class="footer__row_link" href="#!"
-              >Взяли 50 наград по design  awwards</a
+              >Взяли 50 наград по design awwards</a
             >
           </div>
         </div>
@@ -360,7 +394,11 @@
             <span>Контактная почта Новоградская 5, офис 104</span>
           </div>
         </div>
-        <img class="footer__line" src="/assets/images/footer/line.png" alt="line" />
+        <img
+          class="footer__line"
+          src="/assets/images/footer/line.png"
+          alt="line"
+        />
       </div>
     </footer>
   </body>

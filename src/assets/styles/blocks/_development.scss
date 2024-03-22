@@ -2,7 +2,7 @@
   background: #7821e6;
   position: relative;
   height: 100vh;
-  overflow: hidden    ;
+  overflow: hidden;
 }
 
 .container_development {
@@ -54,22 +54,52 @@
 }
 
 .development__title {
-  margin-bottom: 32px;
+  margin-bottom: clamp(0px, -0.857rem + 3.81vw, 32px);
 }
 
 .development__subtitle {
   color: rgb(255, 255, 255);
-  font-size: 18px;
+  font-size: clamp(16px, 0.946rem + 0.24vw, 18px);
   font-weight: 400;
   line-height: 130%;
 
   max-width: 400px;
 
-  margin-bottom: 70px;
+  margin-bottom: clamp(30px, 0.804rem + 4.76vw, 70px);
 }
 
 .developmet__images {
   display: flex;
   align-items: center;
   column-gap: 12px;
+}
+
+@media screen and (max-width: 1200px) {
+  .development {
+    height: unset;
+  }
+  .development__row {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .development__person {
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .header__tech_development,
+  .header__multi_development {
+    display: none;
+  }
+
+  .developmet__images {
+    img {
+      width: clamp(90px, 3.125rem + 12.5vw, 200px);
+    }
+
+    .grapthOne {
+      width: clamp(100px, 3.977rem + 11.36vw, 200px);
+    }
+  }
 }

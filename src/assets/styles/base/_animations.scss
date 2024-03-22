@@ -1,51 +1,29 @@
-@keyframes questionButtonOpen {
+@keyframes showHeaderMenu {
   from {
+    height: 0;
     opacity: 0;
-    top: -30%;
+    pointer-events: none;
+    padding-top: 0;
   }
   to {
+    height: 200px;
     opacity: 1;
-    top: 50%;
+    pointer-events: all;
+    padding-top: 30px;
   }
 }
 
-@keyframes questionButtonClose {
+@keyframes hideHeaderMenu {
   from {
+    height: 200px;
     opacity: 1;
-    top: 50%;
+    pointer-events: all;
+    padding-top: 30px;
   }
   to {
+    height: 0;
     opacity: 0;
-    top: -30%;
-  }
-}
-
-@keyframes questionAnswerOpen {
-  from {
-    opacity: 0;
-    height: 30px;
-    margin-top: -30px;
-    visibility: hidden;
-  }
-  to {
-    opacity: 1;
-    height: auto;
-    margin-top: 0;
-    visibility: visible;
-  }
-}
-
-@keyframes questionAnswerClose {
-  from {
-    opacity: 1;
-    height: auto;
-    margin-top: 0;
-    visibility: visible;
-  }
-  to {
-    opacity: 0;
-    height: 30px;
-    margin-top: -30px;
-    visibility: hidden;
+    pointer-events: none;
+    padding-top: 0;
   }
 }

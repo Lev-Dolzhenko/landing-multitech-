@@ -51,3 +51,31 @@
   font-weight: 500;
   line-height: 155px;
 }
+
+.header__multitech {
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+
+  color: rgb(0, 0, 0);
+  font-size: clamp(48px, 1.095rem + 9.52vw, 128px);
+  font-weight: 500;
+  line-height: 155px;
+}
+
+@media screen and (max-width: 1160px) {
+  .header__tech {
+    display: none;
+  }
+  .header__multi {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header__multitech {
+    top: 85%;
+  }
+}
