@@ -18,12 +18,17 @@
   width: 100%;
 }
 
-.header__cell,
-.header__person {
+.header__cell {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.header__person {
+  position: absolute;
+  left: 50%;
+  top: 50%;
 }
 
 .header__multi {
