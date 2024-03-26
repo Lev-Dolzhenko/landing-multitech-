@@ -46,6 +46,7 @@
 }
 .about__graph {
   position: relative;
+  overflow: hidden;
 
   &::after {
     content: "f(x)=ax2+bx";
@@ -59,6 +60,7 @@
     bottom: -15%;
     transform: translateX(-50%);
   }
+
 }
 
 .circle_about {

@@ -75,12 +75,20 @@
   justify-content: space-between;
 }
 
+.footer__button {
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
   .footer__row {
     flex-direction: column;
     row-gap: 16px;
 
     margin-bottom: 32px;
+  }
+
+  .footer__button {
+    display: block;
   }
 
   .footer__wrapper {
@@ -121,3 +129,11 @@
 .showFooterLinks {
   animation: showFooterLinks 0s ease-out forwards;
 }
+
+.rotateIcon {
+  animation: rotateIcon 0s ease-out forwards;
+}
+
+// .unrotateIcon {
+//   animation: unrotateIcon 0.2s ease-out forwards;
+// }

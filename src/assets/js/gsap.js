@@ -46,6 +46,7 @@ gsap.fromTo(
       scrub: true,
       start: "top center",
       end: "30% center",
+      once: true,
     },
   }
 );
@@ -60,6 +61,26 @@ gsap.fromTo(
       scrub: true,
       start: "top center",
       end: "50% center",
+      once: true,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".graphSvgAbout",
+  {
+    x: -100,
+    opacity: 0,
+  },
+  {
+    x: 0,
+    opacity: 1,
+    scrollTrigger: {
+      trigger: ".about",
+      scrub: true,
+      start: "10% center",
+      end: "50% center",
+      once: true,
     },
   }
 );
@@ -88,6 +109,7 @@ gsap.fromTo(
       scrub: true,
       start: "top center",
       end: "center center",
+      once: true,
     },
   }
 );
@@ -102,6 +124,7 @@ gsap.fromTo(
       scrub: true,
       start: "top center",
       end: "center center",
+      once: true,
     },
   }
 );
@@ -117,6 +140,7 @@ gsap.fromTo(
       scrub: true,
       start: "top center",
       end: "center center",
+      once: true,
     },
   }
 );
@@ -132,6 +156,7 @@ gsap.fromTo(
       scrub: true,
       start: "top center",
       end: "center center",
+      once: true,
     },
   }
 );
@@ -147,13 +172,14 @@ gsap.fromTo(
       scrub: true,
       start: "top center",
       end: "center center",
+      once: true,
     },
   }
 );
 
 gsap.fromTo(
   ".marketing__title",
-  { x: -570 },
+  { x: -700 },
   {
     x: 0,
     scrollTrigger: {
@@ -161,6 +187,7 @@ gsap.fromTo(
       scrub: true,
       start: "top center",
       end: "50% center",
+      once: true,
     },
   }
 );
@@ -176,6 +203,7 @@ gsap.fromTo(
       scrub: true,
       start: "top center",
       end: "50% center",
+      once: true,
     },
   }
 );
@@ -191,6 +219,7 @@ gsap.fromTo(
       scrub: true,
       start: "top center",
       end: "50% center",
+      once: true,
     },
   }
 );
@@ -209,6 +238,7 @@ cardItems.forEach((cardItem) => {
         scrub: true,
         start: "start center",
         end: "center center",
+        once: true,
       },
     }
   );
@@ -225,6 +255,7 @@ gsap.fromTo(
       scrub: true,
       start: "top center",
       end: "50% center",
+      once: true,
     },
   }
 );
@@ -239,6 +270,7 @@ gsap.fromTo(
       scrub: true,
       start: "top center",
       end: "50% center",
+      once: true,
     },
   }
 );

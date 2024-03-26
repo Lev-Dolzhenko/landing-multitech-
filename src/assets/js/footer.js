@@ -8,6 +8,8 @@ for (let footerButton of footerButtons) {
       const footerRowItemName = footerRowItem.dataset.name;
       if (footerButtonName === footerRowItemName) {
         footerRowItem.classList.toggle("showFooterLinks");
+        footerButton.classList.toggle("rotateIcon");
+        // footerButton.classList.toggle("unrotateIcon");
       }
     }
   });
